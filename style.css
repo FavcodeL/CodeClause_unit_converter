@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1{
+    color:black;
+    font-size:x-large;
+    text-align: center;
+    margin:5%;
+    font: bold;
+}
+.container{
+    width:70%;
+    height:50%;
+    margin:10%;
+}
+.main{
+    width: 80%;
+    height:15%;
+    margin:5% 25% 0% 10%;
+}
+.main_selection{
+    width: 100%;
+    height: 38px;
+    background: rgba(0, 0, 0, 0.904);
+    color:white;
+    font-size: large;
+}
+.converter{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.sideA{
+    width: 45%;
+    height: 30%;
+    margin:10% 5% 10% 10%;
+    border:1px black solid;
+}
+.numbersonly{
+    width: 100%;
+    height: 30px;
+    font-size: large;
+    border:none;
+    padding:10px;
+    text-align: center;
+}
+.sideB{
+    width: 45%;
+    height: 30%;
+    margin:10% 10% 10% 5%;
+    border:1px black solid;
+}
+.the_menu{
+    width: 100%;
+    height: 30px;
+    font-size: large;
+    background: rgba(0, 0, 0, 0.904);
+    color:white;
+    border:none;
+}
+.equals_to{
+    color:black;
+    font-size: large;
+    font:bold;
+}

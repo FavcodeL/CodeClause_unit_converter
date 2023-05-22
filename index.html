@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <head>
+        <title>Unit Converter</title>
+        <!-- custom style -->
+        <link rel="stylesheet" href="style.css">
+        <!-- script logic -->
+        <script src="convert.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>UNIT CONVERTER</h1>
+            <div class="main">
+                <form name="selection_form">
+                    <span>
+                        <select class="main_selection" name="options" size=1
+                            onChange="UpdateMenu(this, document.formA.menu); UpdateMenu(this, document.formB.menu)">
+                        </select>
+                    </span>
+                </form>
+            </div>
+            <div class="converter">
+                <div class="sideA"><!-- /converter-side-a -->
+                    <form name="formA" onSubmit="return false">
+                        <input type="text" class="numbersonly" name="input" maxlength="20"
+                            value="0" onKeyUp="CalculateUnit(document.formA, document.formB)"><br>
+                        <span>
+                            <select class ="the_menu" name="menu"
+                                onChange="CalculateUnit(document.formB, document.formA)">
+                            </select>
+                        </span>
+                    </form>
+                </div> 
+                <div class="equals_to">
+                    <p>=</p>
+                </div>
+                <div class="sideB"><!-- /converter-side-b -->
+                    <form name="formB">
+                        <input type="text" class="numbersonly" name="input" maxlength="20"
+                            value="0" onkeyup="CalculateUnit(document.formB, document.formA)">
+                        <span>
+                            <select class ="the_menu" name="menu"
+                                onChange="CalculateUnit(document.formA, document.formB)">
+                            </select>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>                               
+</html>
